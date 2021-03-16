@@ -8,6 +8,7 @@ import { ImageFadeDirective } from './image-fade.directive';
   declarations: [ImageFadeDirective],
   imports: [
     CommonModule
-  ]
+  ],
+  exports: [ImageFadeDirective]
 })
 export class SharedDirectivesModule { }
