@@ -1,4 +1,5 @@
-import { Component, OnInit, Sanitizer } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 import albums from '../../assets/mockdata/albums';
 
@@ -10,7 +11,7 @@ import albums from '../../assets/mockdata/albums';
 export class AlbumPage implements OnInit {
   data=null;
 
-  constructor(private activatedRoute: ActivatedRoute, private sanitizer: Sanitizer) { }
+  constructor(private activatedRoute: ActivatedRoute, private sanitizer: DomSanitizer) { }
 
   ngOnInit() {
     const title = this.activatedRoute.snapshot.paramMap.get('title');
