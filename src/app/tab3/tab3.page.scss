@@ -1,0 +1,9 @@
+ion-toolbar, ion-header{
+    --border-width:0px !important;
+    --background: var(--ion-color-dark);
+}
+
+.text-color{
+    color: var(--ion-color-light);
+    padding: 10px;
+}
